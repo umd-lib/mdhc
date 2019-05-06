@@ -1,0 +1,361 @@
+body {
+   font-family: 'Trebuchet MS', Verdana, sans-serif;
+	font-size: 0.82em;
+	line-height: 1.4em;
+	margin: 0;
+   padding: 0;
+}
+div#container {
+   position: relative;
+   width: 90%;
+   min-width: 59.4em;
+   margin: 0.22em auto 0 auto;
+}
+div#header div.masthead {
+   position: relative;
+   height: 5.56em;
+   margin: 0 0.76em 0 0.76em;
+   padding: 0;
+}
+div#header div.masthead img.libraries,
+div#header div.masthead img.digital,
+div#header div.masthead img.banner {
+	position: absolute;
+	border: none;
+}
+div#header div.masthead img.libraries {
+	top: 0.69em;
+	left: 0;
+	
+}
+div#header div.masthead img.digital {
+	top: 1.3em;
+	left: 14em;
+	}
+div#header div.masthead img.banner {
+	top: 0;
+	right: 0;
+	width: 33.9em;
+	height: 5.56em;
+}
+div#header div.topborder,
+div#footer div.bottomborder {
+	position: relative;
+	height: 1.9em;
+}
+div#header div.subheader {
+	height: 1.9em;
+}
+div#header div.topborder,
+div#header div.subheader,
+div#footer div.bottomborder {
+	line-height: 1.9em;
+	padding: 0.3em 0.76em 0.3em 0.76em;
+	overflow: hidden;
+}
+div#header div.topborder,
+div#footer div.bottomborder {
+	background-color: #990000;
+	color: #FFFFFF;
+	margin: 0;
+}
+div#header div.topborder a:link,
+div#header div.topborder a:visited,
+div#footer div.bottomborder a:link,
+div#footer div.bottomborder a:visited {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+div#header div.topborder a:hover,
+div#footer div.bottomborder a:hover {
+	color: #CCCCCC;
+	text-decoration: none;
+}
+div#header div.topborder img.leftcorner,
+div#header div.topborder img.rightcorner,
+div#footer div.bottomborder img.leftcorner,
+div#footer div.bottomborder img.rightcorner {
+	position: absolute;
+	width: 0.76em;
+	height: 0.76em;
+}
+div#header div.topborder img.leftcorner,
+div#header div.topborder img.rightcorner {
+	top: 0;
+}
+div#footer div.bottomborder img.leftcorner,
+div#footer div.bottomborder img.rightcorner {
+	bottom: 0;
+}
+div#header div.topborder img.leftcorner,
+div#footer div.bottomborder img.leftcorner {
+	left: 0;
+}
+div#header div.topborder img.rightcorner,
+div#footer div.bottomborder img.rightcorner {
+	right: 0;
+}
+div#header form.quicksearch {
+   float: right;
+   /* width: 20em; */
+	text-align: right;
+	margin: 0;
+	padding: 0;
+}
+div#header div.topborder div.navlinks {
+	text-transform: uppercase;
+	font-size: 0.92em;
+}
+div#header div.navlinks a:link {
+	white-space: nowrap;
+}
+div#header div.subheader {
+	background-color: #F2EBB9;
+	color: #000000;
+	margin: 0;
+	border-left: medium solid #990000;
+	border-right: medium solid #990000;
+}
+div#body {
+	position: relative;
+	min-height: 28.87em;
+	border-left: medium solid #990000;
+	border-right: medium solid #990000;
+	margin: 0;
+	padding: 1em;
+}
+div#footer div.identification,
+div#footer div.disclaimers,
+div#footer div.copyright {
+	text-align: center;
+}
+div#footer div.disclaimers,
+div#footer div.copyright {
+	line-height: 1.68em;
+}
+h1, h2, h3, h4, h5, h6 {
+   color: #990000;
+	text-align: left;
+	font-weight: 800;
+	margin: 0;
+	padding: 0;
+	line-height: 1.4em;
+}
+h1 {
+	font-size: 2.0em;
+   font-variant: small-caps;
+}
+h2 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.6em;
+}
+h4 {
+	font-size: 1.4em;
+}
+h5 {
+	font-size: 1.2em;
+}
+h6 {
+	font-size: 1.1em;
+}
+
+	span.pagelink {
+		font-style: italic;
+		font-weight: 800;
+	}
+	span.pagelink a {
+		font-style: normal;
+		font-weight: 400;
+	}
+	
+   form#search fieldset,
+   form#mailform fieldset {
+      width: 60%;
+      min-width: 40em;
+      margin: 2em auto 0 auto;
+      padding: 1em 2em;
+      text-align: center;
+      white-space: nowrap;
+   }
+   form#search fieldset input[type="text"],
+   form#mailform fieldset input[type="text"],
+   form#mailform fieldset textarea {
+      border: thin inset threedface;
+   }
+   
+   form#search fieldset label,
+   form#search fieldset div.boolean,
+   form#search fieldset div.categoryHeader,
+   form#mailform fieldset label,
+   form#search fieldset div.type {
+      float: left;
+   }
+   form#search fieldset label,
+   form#search fieldset div.boolean,
+   form#search fieldset div.categoryHeader,
+   form#mailform fieldset label {
+      width: 20%;
+      margin-right: 1.5%;
+   }
+   form#search fieldset div.type {
+      width: 15%;
+   }
+   form#search fieldset label,
+   form#search fieldset div.categoryHeader,
+   form#mailform fieldset label {
+      text-align: right;
+      color: #990000;
+   }
+   form#search fieldset div.boolean select {
+      width: auto;
+      float: right;
+   }
+   form#search fieldset div.query {
+      float: left;
+      width: 60%;
+      text-align: left;
+   }
+   form#search fieldset div.query input {
+      width: 96%;
+   }
+   form#search fieldset div.type select {
+      width: auto;
+      float: left;
+   }
+   form#search fieldset div#categoryList,
+   form#search fieldset div#allCategories {
+      float: left;
+      width: 58.8%;
+      min-width: 30em;
+   }
+   form#search fieldset div#categoryList {
+      margin-left: 21.5%;
+      border-top: thin solid black;
+      /* height: 7em;
+      overflow: auto; */
+   }
+   form#search fieldset div#allCategories {
+      padding: 0.16em 0 0.16em 0;
+   }
+   form#search fieldset div#categoryList label,
+   form#search fieldset div#allCategories label {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: left;
+      line-height: 1.4em;
+      color: black !important;
+   }
+   form#mailform fieldset input,
+   form#mailform fieldset textarea {
+      float: left;
+      margin-left: 1em;
+   }
+   form#mailform fieldset input,
+   form#mailform fieldset textarea {
+      width: 70%;
+   }
+   form#mailform fieldset textarea {
+      height: 7.0em;
+   }
+   form#search fieldset br,
+   form#mailform fieldset br {
+      clear: both;
+      margin-bottom: 0.7em;
+   }
+   form#search fieldset hr {
+      margin: 1.25em 12.5% 1.25em 12.5%;
+   }
+   form#search fieldset input.formbutton,
+   form#mailform fieldset input.formbutton {
+      float: none;
+      width: 15em;
+      margin: 1em 1em 0 1em;
+   }
+   form#mailform fieldset div.captcha {
+      width: 38em;
+      margin: 0 auto 1.5em auto;
+      white-space: normal;
+   }
+   form#mailform fieldset div.captcha label {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left;
+      margin: 1em 1em 1em 0;
+   }
+   form#mailform fieldset div.captchaImage,
+   form#mailform fieldset div.captchaInput {
+      float: left;
+      width: 49%;
+      height: 6.10em;
+      line-height: 3.05em;
+      margin: 0;
+      padding: 0;
+   }
+   form#mailform fieldset div.captchaImage img {
+      height: 6.10em;
+      width: 18.29em;
+      border: none;
+      margin: 0 auto 0 auto;
+   }
+   form#mailform fieldset div.captchaInput input {
+      width: 6em;
+      margin-left: 6.5em;
+   }
+   
+	div.result {
+		margin: 0.35em 10% 1em 5%;
+	}
+	div.result div.position {
+		color: #990000;
+		float: left;
+		width: 10%;
+		max-width: 60px;
+		text-align: right;
+	}
+	div.result div.content {
+		float: left;
+		width: 89%;
+		padding: 0 0 0 1%;
+	}
+   div.result div.annotation,
+   div.result div.description {
+      width: 90%;
+      margin: 0.5em 5% 0.5em 5%;
+   }
+   div.result div.annotation strong,
+   div.result div.description strong {
+      color: #990000;
+   }
+   div.result div.annotation {
+      font-size: 0.95em;
+   }
+	div.result div.description {
+		font-size: 0.85em;
+	}
+	
+	div.pagelinks {
+		margin: 1.5em auto 1.5em auto;
+		padding: 0;
+		text-align: center;
+	}
+	
+   div.contactError {
+      width: 70%;
+      border: medium dashed #990000;
+      background: #CCCCCC;
+      text-align: center;
+      font-size: 105%;
+      font-weight: 800;
+      padding: 0.5em;
+      margin: 1em auto;
+   }
+   
+	.clear { clear: both; }
+	.searchterm {
+		color: #990000;
+		font-style: italic;
+	}

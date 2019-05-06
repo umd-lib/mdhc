@@ -1,0 +1,14 @@
+div#container,
+div#header div.masthead,
+div#body {
+   position: static;
+}
+img.leftcorner,
+img.rightcorner,
+div#header div.topborder,
+div#header div.subheader {
+   display: none;
+}
+div#body {
+   border: medium solid #990000;
+}

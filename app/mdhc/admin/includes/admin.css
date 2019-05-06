@@ -1,0 +1,91 @@
+@import url("http://www.lib.umd.edu/dcr/collections/mdhc/includes/mdhc.css");
+
+   form#editCitation fieldset {
+      width: 60%;
+      min-width: 40em;
+      margin: 2em auto 0 auto;
+      padding: 1em 2em;
+      text-align: center;
+      white-space: nowrap;
+   }
+   form#editCitation fieldset input[type="text"],
+   form#editCitation fieldset textarea,
+   form#editCitation fieldset div#categoryList {
+      border: 0.16em inset threedface;
+      width: 73%;
+   }
+   form#editCitation fieldset textarea#citation {
+      height: 7em;
+   }
+   form#editCitation fieldset textarea#annotation {
+      height: 4.2em;
+   }
+   form#editCitation fieldset label,
+   form#editCitation fieldset div.label {
+      float: left;
+      width: 25%;
+      margin-right: 1%;
+      text-align: right;
+      color: #990000;
+   }
+   form#editCitation fieldset div#categoryList {
+      float: left;
+      height: 7em;
+      overflow: auto;
+   }
+   form#editCitation fieldset div#categoryList label {
+      display: block;
+      float: none;
+      width: 100%;
+      text-align: left;
+      line-height: 1.4em;
+      color: black !important;
+   }
+   form#editCitation fieldset br {
+      clear: both;
+      margin-bottom: 0.7em;
+   }
+   
+   form#renameCategory fieldset {
+      width: 38.58em;
+      margin: 0 auto 0 auto;
+   }
+   form#renameCategory fieldset label {
+      float: left;
+      width: 16%;
+      text-align: right;
+      margin-right: 1%;
+   }
+   form#renameCategory fieldset input#description {
+      float: left;
+      width: 50%;
+      margin-left: 0;
+      margin-right: 0;
+   }
+   form#renameCategory fieldset input#rename {
+      float: left;
+      width: 30%;
+      margin-left: 1%;
+   }
+   
+   table#categories {
+      min-width: 40em;
+      max-width: 85%;
+      margin: 0 auto 0 auto;
+   }
+   table#categories td {
+      padding: 0.2em 0.75em;
+      border: thin dashed #CCC;
+   }
+   table#categories td.modify {
+      width: 12.5em;
+      text-align: center;
+      vertical-align: middle;
+   }
+   table#categories td.modify input {
+      width: 5.75em;
+   }
+
+   div.result input.edit {
+      float: right;
+   }

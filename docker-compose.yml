@@ -1,0 +1,65 @@
+version: '2'
+
+services:
+
+  app:
+    build:
+      context: ./app
+    ports:
+      - "8080:80"
+    depends_on:
+      - mysql
+    environment:
+      APPCONFIG_DB_USER: 'mdhc'
+      APPCONFIG_DB_PASSWORD: 'mdhc'
+      APPCONFIG_DB_DATABASE: 'mdhc'
+      APPCONFIG_DB_CONN: 'mysql:3306'
+    # volumes:
+    #     - aspace:/opt/archivesspace/data
+
+  mysql:
+    image: mysql:5.7
+    # command: --character-set-server=utf8 --collation-server=utf8_unicode_ci --innodb_buffer_pool_size=2G --innodb_buffer_pool_instances=2
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: mdhc
+      MYSQL_USER: mdhc
+      MYSQL_PASSWORD: mdhc
+
+  phpmyadmin:
+    depends_on:
+      - mysql
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    restart: always
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+    ports:
+      - "8081:80"
+
+  # web:
+  #   image: nginx:1.13
+  #   environment:
+  #     ASPACE_STAFF: aspace.local
+  #     ASPACE_PUBLIC: archives.local
+  #   volumes:
+  #     - ./proxy/aspace.template:/etc/nginx/conf.d/aspace.template
+  #     - ./proxy/includes:/etc/nginx/includes
+  #     - ./proxy/docker-startup.sh:/startup.sh
+  #     - ./ssl/certs:/etc/ssl/certs
+  #   ports:
+  #     - "80:80"
+  #     - "443:443"
+  #   depends_on:
+  #     - app
+  #   command: /bin/bash /startup.sh
+
+volumes:
+  mysql:
+
