@@ -43,23 +43,6 @@ services:
     ports:
       - "8081:80"
 
-  # web:
-  #   image: nginx:1.13
-  #   environment:
-  #     ASPACE_STAFF: aspace.local
-  #     ASPACE_PUBLIC: archives.local
-  #   volumes:
-  #     - ./proxy/aspace.template:/etc/nginx/conf.d/aspace.template
-  #     - ./proxy/includes:/etc/nginx/includes
-  #     - ./proxy/docker-startup.sh:/startup.sh
-  #     - ./ssl/certs:/etc/ssl/certs
-  #   ports:
-  #     - "80:80"
-  #     - "443:443"
-  #   depends_on:
-  #     - app
-  #   command: /bin/bash /startup.sh
-
 volumes:
   mysql:
 
