@@ -37,7 +37,6 @@ Will output to data/export.tsv
 ## TODO
 
 * Determine if character set encoding is being handled properly
-* In the export, aggregate multiple categories for a single citation into one row
 * Run the export automaticaly using the mysql container
 * Determine if the database contains any sensitive data; if not then included the database dump file in the git repository
 

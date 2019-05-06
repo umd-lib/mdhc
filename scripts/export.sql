@@ -1,9 +1,10 @@
 SELECT
-  citation.ID,
-  citation.author,
+  citation.author AS authors,
   citation.citation,
-  citation.annotation,
-  codes.description AS category
-FROM citation
-LEFT JOIN codelookup ON citation.ID=codelookup.CitID
-LEFT JOIN codes ON codelookup.CodeID=codes.ID
+  IFNULL(citation.annotation,"") AS 'annotation/notes',
+  GROUP_CONCAT(codes.description SEPARATOR '; ') AS categories
+FROM citation, codelookup, codes
+WHERE
+  citation.ID=codelookup.CitID
+  AND codelookup.CodeID=codes.ID
+GROUP BY citation.ID
