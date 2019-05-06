@@ -38,7 +38,6 @@ Will output to data/export.tsv
 
 * Determine if character set encoding is being handled properly
 * Run the export automaticaly using the mysql container
-* Determine if the database contains any sensitive data; if not then included the database dump file in the git repository
 
 ## License
 
