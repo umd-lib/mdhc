@@ -14,8 +14,6 @@ services:
       APPCONFIG_DB_PASSWORD: 'mdhc'
       APPCONFIG_DB_DATABASE: 'mdhc'
       APPCONFIG_DB_CONN: 'mysql:3306'
-    # volumes:
-    #     - aspace:/opt/archivesspace/data
 
   mysql:
     image: mysql:5.7
