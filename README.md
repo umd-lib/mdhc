@@ -26,17 +26,18 @@ cat data/*.sql | docker exec -i mdhc_mysql_1 /usr/bin/mysql --user=root --passwo
 A MySQL client (such as MySQL Workbench) can connect to the database on
 port 3306.
 
-## Exporting data
+## Cleaning up and exporting the data
+
+This script will fix some characters in place in the database, export to
+TSV, then convert to CSV.  Final result is in data/export.csv
 
 ```
 bash scripts/export.sh
 ```
 
-Will output to data/export.tsv
-
 ## TODO
 
-* Determine if character set encoding is being handled properly
+* Determine why some columns/rows are not aligning properly
 * Run the export automaticaly using the mysql container
 
 ## License
