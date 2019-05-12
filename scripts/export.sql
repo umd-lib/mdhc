@@ -1,8 +1,8 @@
 SELECT
-  TRIM(REPLACE(REPLACE(citation.author, "\n", ""), "\t", "")) AS authors,
-  TRIM(REPLACE(REPLACE(citation.citation, "\n", ""), "\t", "")) AS citation,
-  TRIM(REPLACE(REPLACE(IFNULL(citation.annotation,""), "\n", ""), "\t", "")) AS 'annotation/notes',
-  TRIM(REPLACE(REPLACE(GROUP_CONCAT(codes.description SEPARATOR '; '), "\n", ""), "\t", "")) AS categories
+  TRIM(citation.author) AS authors,
+  TRIM(citation.citation) AS citation,
+  TRIM(IFNULL(citation.annotation,"")) AS 'annotation/notes',
+  GROUP_CONCAT(codes.description SEPARATOR '; ') AS categories
 FROM citation, codelookup, codes
 WHERE
   citation.ID=codelookup.CitID
